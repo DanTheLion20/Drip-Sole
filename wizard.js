@@ -53,12 +53,11 @@ function updateCartDisplay() {
         const cartItemDiv = document.createElement('div');
         cartItemDiv.classList.add('cart-item');
     
-        // Product image
+
         const img = document.createElement('img');
         img.src = item.imageUrl;
         cartItemDiv.appendChild(img);
-    
-        // Product name, size, and price
+
         const infoDiv = document.createElement('div');
         infoDiv.innerHTML = `
         <div class = "container"> 
