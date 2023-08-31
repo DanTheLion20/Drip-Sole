@@ -1,0 +1,271 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* FONT STYLE */
+.primary {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.primary_title {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+.primary1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 19px;
+}
+
+.secondary {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 19px;
+}
+
+  
+.vertical {
+    transform: translateY(18%);
+}
+
+
+
+.size-button {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+    padding: 12px 12px 12px 12px;
+    text-align: center;
+    min-height: 100%;
+    width: 20%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.size-button button.active {
+    color:black;
+}
+
+
+
+.add-to-cart-button {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    padding: 5px 12px 5px 12px;
+    text-align: center;
+    min-height: 100%;
+    width: 82.5%;
+    color:white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+
+}
+
+.highlighted {
+    background-color: black;
+    color:white;
+  }
+
+
+   /* NAVBAR DESIGN*/
+
+.nav-logo{
+	position: absolute;
+    display: inline-block;
+    left: 15.7%;
+	width: 65px;
+}
+
+
+  .navbar-blur{
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+	background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(5px);
+}
+
+.navbar {
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+	z-index: 3;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0)!important;
+    text-shadow: 0 0 1.4px currentColor;
+}
+
+.nav-link:hover {
+    color:rgb(126, 124, 124)!important;
+    text-shadow: 0 0 0.1em currentColor;
+}
+
+/* end of navbar */
+
+/* FOR CART TAB */
+
+.cart-container {
+    position: absolute;
+    display: inline-block;
+    right: 15%;
+}
+.cart-icon {
+    cursor: pointer;
+    position: relative; /* Add this to enable positioning of the notification */
+}
+.cart-notification {
+    background-color: #ff0000;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px; 
+    right: -10px; 
+    width: 17px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .7rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* END OF CART TAB */
+.cart {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 400px;
+    z-index: 1;
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.cart-item img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#cart-items {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
+
+/* DELETE BUTTON */
+.cart-item button {
+   color:black;
+   font-family: 'Red Hat Display', sans-serif;
+   font-size: 20px;
+   height:0;
+   border: none;
+   width: 0;
+   transform: translateY(-450%);
+
+
+}
+
+/* CHECK OUT BUTTON */
+.checkout-button {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+    min-height: 100%;
+    width: 100%;
+    color:white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 23px;
+    cursor: pointer;
+}
+/* VIEW CART BUTTON */
+.view-cart-button {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 5px 15px 5px 15px;
+    text-align: center;
+    min-height: 100%;
+    width: 100%;
+    color:black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.view-cart-button:hover {
+    background-color: black;
+    color: white;
+    transition: .3s;
+}
+
+.fa-solid{
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* footer */
+
+
+.background-padding{
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 23px;
+}
+
+.background-padding li {
+    list-style-type: none;  
+   
+}
+
+.nav-logo{
+	position: absolute;
+    display: inline-block;
+    left: 15.7%;
+	width: 65px;
+}
+
+/* FOOTER DESIGN */
+.background-padding{
+    background-color: black;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    width: 100%;
+}
+
+.fa-solid1{
+    font-size: 1.3rem;
+	color: rgb(255, 255, 255);
+}
+
+.footer-logo{
+	width: 65px;
+}
+
+.navbar1 {
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+}
+
+.nav-link1 {
+    color: #ffffff!important;
+    text-shadow: 0 0 1.4px currentColor;
+    text-decoration: none;
+}
+
+.nav-link1:hover {
+    color:rgb(126, 124, 124)!important;
+    text-shadow: 0 0 0.1em currentColor;
+}

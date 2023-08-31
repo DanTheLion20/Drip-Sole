@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Drip Sole</title>
+    <link rel="icon" href="img/drip.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Poppins:400,700'>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="nav-logo">
+      <a href="#"><img src="img/drip.png" class="img-fluid" alt="dripsole"></a>
+    </div>
+        <div class="container">
+            <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="color navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="footware.html">Footwear</a>
+                    </li>
+                    <li class="nav-item px-2">
+                      <a class="nav-link" href="apparels.html">Apparels</a>
+                  </li>
+                  <li class="nav-item px-2">
+                    <a class="nav-link" href="slides.html">Slides</a>
+                  </li>
+                    <li class="nav-item px-2">
+                      <a class="nav-link" href="#">Accessories</a>
+                  </li>
+                    <li class="nav-item px-2">
+                      <a class="nav-link" href="#">Blogs</a>
+                  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cart-container ">
+            <!-- Shopping Cart Icon -->
+            <div class="cart-icon" onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-notification" id="cart-notification">0</div>
+            </div>
+            <!-- Shopping Cart -->
+            <div class="cart" id="cart">
+                <div id="cart-items">
+                  
+                    <!-- Cart items will be displayed here -->
+                </div>
+                <p class="primary1">Total: ₱<span id="cart-total">0.00</span></p>
+                <div class="row">
+                  <div class="col-6"><button class="checkout-button">Checkout</button></div>
+                  <div class="col-6"><button class="view-cart-button" onclick="toggleCart()">View Cart</button></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!--END OF NAVIGATION BAR -->
+
+
+<div class="video-container">
+  <video src="vid/CUTTEDSKI.mp4" id="videoBG" autoplay muted loop></video>
+  <div class="text-overlay">
+    Drip Sole
+  </div>
+</div>
+
+
+   
+    <div class="container mt-5 pt-3">
+      <h1 class="primary_title">shoes of the week &nbsp; ⮞</h1>
+      <div class="row gx-5">
+        <div class="col-4">
+          <div class="cardo card border-0">
+              <img src="img/sotd.jpg" alt="">
+              <h3 class="card-title text-center mx-3 primary_title">Nike LeBron XX <br> EP x UNKNWN</h3>
+       
+            <div class="card-content secondary text-center ">
+              The LeBron XX x UNKNWN "Message in a Bottle" passes the game from one generation to the next. 
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="cardo card border-0">
+              <img src="img/sotd1.jpg" alt="">
+              <h3 class="card-title text-center mx-3 primary_title">Air Jordan 2 <br> Retro Low SP</h3>
+       
+            <div class="card-content secondary text-center  ">
+              Spread the love. Tell the stories. Step into greatness.
+            </div>
+          </div>
+        </div>
+        <div class=" col-4">
+          <div class="cardo card border-0">
+              <img src="img/sotd2.jpg" alt="">
+              <h3 class="card-title text-center mx-3 primary_title">Air Jordan 5 <br> Retro SE 'Craft'</h3>
+       
+            <div class="card-content mb-5 secondary text-center  ">
+              This crafted take on the AJ5 boosts your appeal with a premium mix of suede and canvas fresh look for the unmissable 1990 design. 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- NEW ARRIVALS -->
+    <div class="container">
+      <h1 class="primary_title mt-5">New Arrivals &nbsp; ⮞</h1>
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <a href="atc_details.html">
+          <div class="card border-0">
+            <img src="img/shoe2.jpg" alt="">
+              <div class="card-body">
+                <h5 class="primary1">Nike</h5>
+                  <h4 class="primary">Nike LeBron NXXT Gen EP <br>'Blue Tint'</h4>
+                  <h4 class="primary">₱7,116.00</h4>
+              </div>
+          </div>
+        </a>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0">
+            <img src="img/na.jpg" alt="">
+              <div class="card-body">
+                <h5 class="primary1">New Era</h5>
+                  <h4 class="primary">New Era NBA '22-'23 Champions <br>Denver Nuggets 9Fifty</h4>
+                  <h4 class="primary">₱2,595.00</h4>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0">
+            <img src="img/s3.jpg" alt="">
+              <div class="card-body">
+                <h5 class="primary1">Nike</h5>
+                  <h4 class="primary">Nike LeBron NXXT Gen EP <br>'TITAN Hoops Fair'</h4>
+                  <h4 class="primary">₱8,895.00</h4>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0">
+            <img src="img/s4.jpg" alt="">
+              <div class="card-body">
+                <h5 class="primary1">Adidas</h5>
+                  <h4 class="primary">Adidas Rivalry Low 86 <br>'White, Ink and Gold'</h4>
+                  <h4 class="primary">₱4,640.00</h4>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0">
+            <img src="img/s5.jpg" alt="">
+              <div class="card-body">
+                <h5 class="primary1">Nike</h5>
+                  <h4 class="primary">Nike Cosmic Unity 3 <br> 'Spotlight'</h4>
+                  <h4 class="primary">₱7,555.50</h4>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0">
+            <img src="img/s7.jpg" alt="">
+              <div class="card-body">
+                <h5 class="primary1">Nike Sportswear</h5>
+                  <h4 class="primary">Nike Dunk High <br> 'Velvet Brown'</h4>
+                  <h4 class="primary">₱5,116.00</h4>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0">
+            <img src="img/na2.jpg" alt="">
+              <div class="card-body">
+                <h5 class="primary1">Jordan</h5>
+                  <h4 class="primary">Jordan Flight Crew Basketball Socks</h4>
+                  <h4 class="primary">₱845.00</h4>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card border-0">
+            <img src="img/shoe1.jpg" alt="">
+              <div class="card-body">
+                <h5 class="primary1">Adidas</h5>
+                  <h4 class="primary">Adidas Forum Low 84 <br> 'Chalk White and Sky Rush'</h4>
+                  <h4 class="primary">₱4,640.00</h4>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- END OF NEW ARRIVALS -->
+<!-- BOX IMAGE -->
+    <section>
+      <div class="container-fluid">
+        <div class="row my-5 mx-5">
+          <div class="col-md-4">
+            
+            <div class="image">
+              <a href="footware.html">
+              <img src="img/z.jpg" class="img-fluid w-100" alt="">
+            </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="image">
+              <a href="slides.html">
+              <img src="img/x.jpg" class="img-fluid w-100" alt="">
+            </a>
+            </div>
+          </div>
+         
+          <div class="col-md-4">
+            <div class="image">
+              <a href="apparels.html">
+              <img src="img/v.jpg" class="img-fluid w-100" alt="">
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- END OF BOX IMAGE -->
+<!-- NEW ARRIVALS -->
+<div class="container mb-5">
+  <h1 class="primary_title mt-5">Payday Sale!!! &nbsp; ⮞</h1>
+  <div class="row">
+    <div class="col-md-6 col-lg-3">
+      <a href="atc_details.html">
+      <div class="card border-0">
+        <img src="img/sale1.jpg" alt="">
+          <div class="card-body">
+            <h5 class="primary1">Jordan</h5>
+              <h4 class="primary">Jordan Everyday No-Show Socks <br>(3 Pairs)</h4>
+              <div><span class="primary_sale">₱696.50</span> &nbsp;<span  class="primary_cross">₱995.00</span></div>
+          </div>
+      </div>
+    </a>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card border-0">
+        <img src="img/sale2.jpg" alt="">
+          <div class="card-body">
+            <h5 class="primary1">Nike Sportswear</h5>
+              <h4 class="primary">Nike Air Force 1 Retro <br>'Oil Green'</h4>
+              <div><span class="primary_sale">₱5,116.00</span> &nbsp;<span  class="primary_cross"> ₱7,116.00</span></div>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card border-0">
+        <img src="img/sale3.jpg" alt="">
+          <div class="card-body">
+            <h5 class="primary1">Jordan</h5>
+              <h4 class="primary">Air Jordan 1 Zoom Comfort 2  <br>'Light Orewood Brown'</h4>
+              <div><span class="primary_sale">₱6,476.00</span> &nbsp;<span  class="primary_cross">₱8,095.00</span></div>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card border-0">
+        <img src="img/sale4.jpg" alt="">
+          <div class="card-body">
+            <h5 class="primary1">New Era</h5>
+              <h4 class="primary">New Era Black Chrome NBA Pack <br>Chicago Bulls 9Forty Snapback Cap</h4>
+              <div><span class="primary_sale">₱1,950.00</span> &nbsp;<span  class="primary_cross">₱2,295.00</span></div>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card border-0">
+        <img src="img/sale5.jpg" alt="">
+          <div class="card-body">
+            <h5 class="primary1">New Era</h5>
+              <h4 class="primary">New Era X Just Don Houston Rockets <br>59Fifty Fitted Cap</h4>
+              <div><span class="primary_sale">₱3,295.00</span> &nbsp;<span  class="primary_cross"> ₱3,795.00</span></div>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card border-0">
+        <img src="img/sale6.jpg" alt="">
+          <div class="card-body">
+            <h5 class="primary1">Nike NBA</h5>
+              <h4 class="primary">Nike Dri-FIT NBA Icon Edition <br>LeBron James Los Angeles Lakers</h4>
+              <div><span class="primary_sale">₱2,877.00</span> &nbsp;<span  class="primary_cross">₱4,795.00</span></div>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card border-0">
+        <img src="img/sale7.jpg" alt="">
+          <div class="card-body">
+            <h5 class="primary1">Puma</h5>
+              <h4 class="primary">Puma Slipstream Lo Retro<br>'White and Regal Red'</h4>
+              <div><span class="primary_sale">₱5,800.00</span> &nbsp;<span  class="primary_cross">₱6,800.00</span></div>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <div class="card border-0">
+        <img src="img/sale8.jpg" alt="">
+          <div class="card-body">
+            <h5 class="primary1">Jordan</h5>
+              <h4 class="primary">Jordan Granville Pro <br>'Obsidian'</h4>
+              <div><span class="primary_sale">₱6,835.50</span> &nbsp;<span  class="primary_cross">₱7,595.00</span></div>
+          </div>
+      </div>
+    </div>
+    
+   
+  </div>
+</div>
+
+<!-- END OF NEW ARRIVALS -->
+
+<!-- FOOTER -->
+<div class="background-padding">
+  <div class="container ">
+    <footer class="py-3 my-4">
+        <ul class="nav navbar1 justify-content-center border-bottom">
+          <li class="nav-item px-2">
+            <a class="nav-link1" href="footware.html">Footwear</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link1" href="apparels.html">Apparels</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link1" href="slides.html">Slides</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link1" href="#">Accessories</a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link1" href="#">Blogs</a>
+          </li>
+        </ul>
+            <div class="row">
+              <div class="col-md-6 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 primary1"><img src="img/drip1.png" class="footer-logo " alt="">&nbsp; &copy; 2023 Drip Sole, Inc</span>
+              </div>
+        
+              <ul class="nav col-md-6 justify-content-end list-unstyled d-flex my-3">
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/" target="_blank"><i class="fa-solid1 fa-brands fa-facebook"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/" target="_blank"><i class="fa-solid1 fa-brands fa-instagram"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/" target="_blank"><i class="fa-solid1 fa-brands fa-x-twitter"></i></a></li>
+              </ul>
+            </div>
+    </footer>
+  </div>
+</div>
+<!-- END OF FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="wizard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+    </script>
+</body>
+</html>
