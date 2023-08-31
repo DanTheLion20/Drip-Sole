@@ -269,3 +269,52 @@ body, html {
     color:rgb(126, 124, 124)!important;
     text-shadow: 0 0 0.1em currentColor;
 }
+
+.cart-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 15px; 
+}
+
+.cart-icon {
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+.cart-notification {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    position: absolute;
+    top: 80;
+    right: 50;
+}
+
+.logo {
+    width: 60px; 
+    height: 50px;
+}
+
+.cart-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 15px; 
+}
+
+.cart-icon {
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+.cart-notification {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    position: absolute;
+    top: 80;
+    right: 50;
+}

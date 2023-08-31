@@ -22,53 +22,35 @@
 <body>
 
   <!-- NAVIGATION BAR -->
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="nav-logo">
-      <a href="#"><img src="img/drip.png" class="img-fluid" alt="dripsole"></a>
-    </div>
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top justify-content-center">
         <div class="container">
+            <!-- Add custom CSS styles to the <img> element for resizing -->
+            <a class="navbar-brand" href="#"><img src="img/drip.png" class="img-fluid logo" alt="dripsole"></a>
             <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="color navbar-nav mx-auto mb-2 mb-lg-0">
-
+                <ul class="color navbar-nav mx-auto">
                     <li class="nav-item px-2">
                         <a class="nav-link" href="footware.html">Footwear</a>
                     </li>
                     <li class="nav-item px-2">
-                      <a class="nav-link" href="apparels.html">Apparels</a>
-                  </li>
-                  <li class="nav-item px-2">
-                    <a class="nav-link" href="slides.html">Slides</a>
-                  </li>
+                        <a class="nav-link" href="apparels.html">Apparels</a>
+                    </li>
                     <li class="nav-item px-2">
-                      <a class="nav-link" href="accessories.html">Accessories</a>
-                  </li>
+                        <a class="nav-link" href="slides.html">Slides</a>
+                    </li>
                     <li class="nav-item px-2">
-                      <a class="nav-link" href="#">Blogs</a>
-                  </li>
+                        <a class="nav-link" href="accessories.html">Accessories</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <!-- 
-        <div class="cart-container ">
-            <div class="cart-icon" onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i>
-                <div class="cart-notification" id="cart-notification">0</div>
-            </div>
-            <div class="cart" id="cart">
-                <div id="cart-items">
-                </div>
-                <p class="primary1">Total: ₱<span id="cart-total">0.00</span></p>
-                <div class="row">
-                  <div class="col-6"><button class="checkout-button">Checkout</button></div>
-                  <div class="col-6"><button class="view-cart-button" onclick="toggleCart()">View Cart</button></div>
-                </div>
-            </div>
-        </div>
-        -->
     </nav>
 </header>
 
@@ -79,10 +61,10 @@
   <div class="filter_blur">
   <video src="vid/cutteddrip.mp4" id="videoBG" autoplay muted loop></video>
 </div>
-  <div class="text-overlay">
-   DRIP SOLE
-    <div class="drip_sole">Shop Now</div>
-  </div>
+<div class="text-overlay">
+  DRIP SOLE
+  <a href="footware.html" class="no-underline"><div class="drip_sole">Shop Now</div></a>
+</div>
 </div>
 
 

@@ -24,57 +24,38 @@
 
    <!-- NAVIGATION BAR -->
    <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="nav-logo">
-      <a href="#"><img src="img/drip.png" class="img-fluid" alt="dripsole"></a>
-    </div>
-        <div class="container">
-            <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <ul class="color navbar-nav mx-auto mb-2 mb-lg-0">
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item px-2">
+    <nav class="navbar navbar-expand-lg fixed-top justify-content-center">
+      <div class="container">
+          <!-- Add custom CSS styles to the <img> element for resizing -->
+          <a class="navbar-brand" href="#"><img src="img/drip.png" class="img-fluid logo" alt="dripsole"></a>
+          <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarContent">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="color navbar-nav mx-auto">
+                <li class="nav-item px-2">
+                  <a class="nav-link" href="index.html">Home</a>
+              </li>
+                  <li class="nav-item px-2">
                       <a class="nav-link" href="footware.html">Footwear</a>
                   </li>
                   <li class="nav-item px-2">
-                    <a class="nav-link" href="apparels.html">Apparels</a>
-                </li>
-                <li class="nav-item px-2">
-                  <a class="nav-link" href="slides.html">Slides</a>
-                </li>
+                      <a class="nav-link" href="apparels.html">Apparels</a>
+                  </li>
                   <li class="nav-item px-2">
-                    <a class="nav-link" href="#">Accessories</a>
-                </li>
+                      <a class="nav-link" href="slides.html">Slides</a>
+                  </li>
                   <li class="nav-item px-2">
-                    <a class="nav-link" href="#">Blogs</a>
-                </li>
-                </ul>
-            </div>
-        </div>
-        <div class="cart-container ">
-            <!-- Shopping Cart Icon -->
-            <div class="cart-icon" onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i>
-                <div class="cart-notification" id="cart-notification">0</div>
-            </div>
-            <!-- Shopping Cart -->
-            <div class="cart" id="cart">
-                <div id="cart-items">
-                  
-                    <!-- Cart items will be displayed here -->
-                </div>
-                <p class="primary1">Total: ₱<span id="cart-total">0.00</span></p>
-                <div class="row">
-                  <div class="col-6"><button class="checkout-button">Checkout</button></div>
-                  <div class="col-6"><button class="view-cart-button" onclick="toggleCart()">View Cart</button></div>
-                </div>
-            </div>
-        </div>
-    </nav>
+                      <a class="nav-link" href="accessories.html">Accessories</a>
+                  </li>
+                  <li class="nav-item px-2">
+                      <a class="nav-link" href="#">Blogs</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
 </header>
 
 <!--END OF NAVIGATION BAR -->
@@ -95,11 +76,11 @@
         <div class="col-md-3 col-sm-6">
           <a href="atc_details.html">
           <div class="card border-0">
-            <img src="img/slide1.jpg" class="img-fluid" alt="">
+            <img src="img/apparel.jpg" class="img-fluid" alt="">
               <div class="card-body">
-                <h5 class="primary1">Jordan</h5>
-                  <h4 class="primary">Wmns Jordan Hex Mule SP <br> 'Light Silver'</h4>
-                  <h4 class="primary">₱1,977.00</h4>
+                <h5 class="primary1">New Era</h5>
+                  <h4 class="primary">New Era X Just Don Houston Rockets <br> 59Fifty Fitted Cap</h4>
+                  <h4 class="primary">₱3,795.00</h4>
               </div>
           </div>
         </a>
@@ -108,11 +89,11 @@
         <div class="box">
         <div class="col-md-3 col-sm-6">
           <div class="card border-0">
-            <img src="img/slide2.jpg" class="img-fluid" alt="">
+            <img src="img/apparel9.jpg" class="img-fluid" alt="">
               <div class="card-body">
-                <h5 class="primary1">Jordan</h5>
-                  <h4 class="primary">Wmns Jordan Hex Mule</h4>
-                  <h4 class="primary">₱2,306.50</h4>
+                <h5 class="primary1">New Era</h5>
+                  <h4 class="primary">New Era NBA New Generation Boston <br> Celtics 9Forty A-Frame </h4>
+                  <h4 class="primary">₱2,295.00</h4>
               </div>
           </div>
         </div>
@@ -120,59 +101,59 @@
         <div class="box">
         <div class="col-md-3 col-sm-6">
           <div class="card border-0">
-            <img src="img/slide3.jpg" class="img-fluid" alt="">
-              <div class="card-body">
-                <h5 class="primary1">Jordan</h5>
-                  <h4 class="primary">Jordan Hex Women's Slides</h4>
-                  <h4 class="primary">₱2,236.00</h4>
-              </div>
-          </div>
-        </div>
-    </div>
-        <div class="box">
-        <div class="col-md-3 col-sm-6">
-          <div class="card border-0">
-            <img src="img/slide4.jpg" class="img-fluid" alt="">
-              <div class="card-body">
-                <h5 class="primary1">Jordan</h5>
-                  <h4 class="primary">Jordan Super Play Slide</h4>
-                  <h4 class="primary">₱2,156.00</h4>
-              </div>
-          </div>
-        </div>
-    </div>
-        <div class="box">
-        <div class="col-md-3 col-sm-6">
-          <div class="card border-0">
-            <img src="img/slide5.jpg" class="img-fluid" alt="">
-              <div class="card-body">
-                <h5 class="primary1">Jordan</h5>
-                  <h4 class="primary">Jordan Super Play Slides</h4>
-                  <h4 class="primary">₱2,425.50</h4>
-              </div>
-          </div>
-        </div>
-    </div>
-        <div class="box">
-        <div class="col-md-3 col-sm-6">
-          <div class="card border-0">
-            <img src="img/slide7.jpg" class="img-fluid" alt="">
-              <div class="card-body">
-                <h5 class="primary1">Jordan</h5>
-                  <h4 class="primary">Jordan Super Play Slide</h4>
-                  <h4 class="primary">₱2,156.00</h4>
-              </div>
-          </div>
-        </div>
-    </div>
-        <div class="box">
-        <div class="col-md-3 col-sm-6">
-          <div class="card border-0">
-            <img src="img/slide8.jpg" class="img-fluid" alt="">
+            <img src="img/apparel3.jpg" class="img-fluid" alt="">
               <div class="card-body">
                 <h5 class="primary1">Nike</h5>
-                  <h4 class="primary">Wmns Nike Adjust Force Sandal <br> 'White and Metallic Silver'</h4>
-                  <h4 class="primary">₱4,956.00 </h4>
+                  <h4 class="primary">Nike Everyday Cushioned <br> Crew Socks (3-Pack)</h4>
+                  <h4 class="primary">₱945.00</h4>
+              </div>
+          </div>
+        </div>
+    </div>
+        <div class="box">
+        <div class="col-md-3 col-sm-6">
+          <div class="card border-0">
+            <img src="img/apparel4.jpg" class="img-fluid" alt="">
+              <div class="card-body">
+                <h5 class="primary1">Jordan</h5>
+                  <h4 class="primary">Jordan Everyday <br> Crew Socks (3 pairs)</h4>
+                  <h4 class="primary">₱995.00</h4>
+              </div>
+          </div>
+        </div>
+    </div>
+        <div class="box">
+        <div class="col-md-3 col-sm-6">
+          <div class="card border-0">
+            <img src="img/apparel5.jpg" class="img-fluid" alt="">
+              <div class="card-body">
+                <h5 class="primary1">NIKE</h5>
+                  <h4 class="primary">Nike Elite Mid <br> Basketball Socks</h4>
+                  <h4 class="primary">₱645.00</h4>
+              </div>
+          </div>
+        </div>
+    </div>
+        <div class="box">
+        <div class="col-md-3 col-sm-6">
+          <div class="card border-0">
+            <img src="img/apparel6.jpg" class="img-fluid" alt="">
+              <div class="card-body">
+                <h5 class="primary1">New Era</h5>
+                  <h4 class="primary">New Era X Just Don Milwaukee Bucks <br> 59Fifty Fitted Cap</h4>
+                  <h4 class="primary">₱3,795.00</h4>
+              </div>
+          </div>
+        </div>
+    </div>
+        <div class="box">
+        <div class="col-md-3 col-sm-6">
+          <div class="card border-0">
+            <img src="img/apparel7.jpg" class="img-fluid" alt="">
+              <div class="card-body">
+                <h5 class="primary1">New Era</h5>
+                  <h4 class="primary">New Era X Just Don Dallas Mavericks <br> 59Fifty Fitted Cap</h4>
+                  <h4 class="primary">₱3,795.00</h4>
               </div>
           </div>
         </div>
@@ -180,11 +161,11 @@
     <div class="box">
         <div class="col-md-3 col-sm-6">
           <div class="card border-0">
-            <img src="img/slide6.jpg" class="img-fluid" alt="">
+            <img src="img/apparel8.jpg" class="img-fluid" alt="">
               <div class="card-body">
-                <h5 class="primary1">Jordan</h5>
-                  <h4 class="primary">Jordan Hex Women's Mule</h4>
-                  <h4 class="primary">₱2,636.00</h4>
+                <h5 class="primary1">New Era</h5>
+                  <h4 class="primary">New Era Black Chrome NBA Pack <br> Chicago Bulls 9Forty</h4>
+                  <h4 class="primary">₱2,295.00</h4>
               </div>
           </div>
         </div>
