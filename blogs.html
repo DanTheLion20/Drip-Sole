@@ -26,7 +26,6 @@
    <header>
     <nav class="navbar navbar-expand-lg fixed-top justify-content-center">
       <div class="container">
-          <!-- Add custom CSS styles to the <img> element for resizing -->
           <a class="navbar-brand" href="index.html"><img src="img/drip.png" class="img-fluid logo" alt="dripsole"></a>
           <button class="navbar-toggler bg-transparent" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarContent">
@@ -55,8 +54,26 @@
               </ul>
           </div>
       </div>
+      <div class="cart-container ">
+        <!-- Shopping Cart Icon -->
+        <div class="cart-icon" onclick="toggleCart()"><i class="fa-solid fa-cart-shopping"></i>
+            <div class="cart-notification" id="cart-notification">0</div>
+        </div>
+        <!-- Shopping Cart -->
+        <div class="cart" id="cart">
+            <div id="cart-items">
+              
+                <!-- Cart items will be displayed here -->
+            </div>
+            <p class="primary1">Total: <span id="cart-total">0.00</span></p>
+            <div class="row">
+              <div class="col-6"><button class="checkout-button">Checkout</button></div>
+              <div class="col-6"><button class="view-cart-button" onclick="toggleCart()">View Cart</button></div>
+            </div>
+        </div>
+    </div>
   </nav>
-</header>
+  </header>
 
 <!--END OF NAVIGATION BAR -->
 
