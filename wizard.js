@@ -124,6 +124,7 @@ function calculateCartTotal() {
     return storedTotal ? parseFloat(storedTotal) : 0;
 }
 
+//Navbar Blur effect
 document.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     const navbar = header.querySelector('.navbar');
